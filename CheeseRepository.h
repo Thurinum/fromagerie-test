@@ -9,9 +9,17 @@
 #include <vector>
 #include "CheeseVariety.h"
 
+using std::vector;
+
 class CheeseRepository {
-    std::vector<CheeseVariety> varieties;
-    std::vector<Country> countries;
+public:
+//    vector<CheeseVariety> allVarieties();
+//    vector<CheeseVariety> varietyByName(string name);
+    [[nodiscard]] vector<CheeseVariety> varietiesFromCountry(const Country& country) const;
+
+private:
+    vector<CheeseVariety> varieties;
+    vector<Country> countries;
 };
 
 

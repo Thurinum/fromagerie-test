@@ -7,7 +7,8 @@
 
 #include <string>
 
-struct Country {
+class Country {
+public:
     long int id;
     std::string name;
 };

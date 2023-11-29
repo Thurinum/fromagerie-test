@@ -3,3 +3,13 @@
 //
 
 #include "CheeseRepository.h"
+
+vector<CheeseVariety> CheeseRepository::varietiesFromCountry(const Country &country) const {
+    vector<CheeseVariety> result;
+
+    for (const CheeseVariety& variety : this->varieties) {
+        if (variety.countryOfOrigin == country) {
+
+        }
+    }
+}

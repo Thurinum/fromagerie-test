@@ -3,3 +3,11 @@
 //
 
 #include "CheeseVariety.h"
+
+bool CheeseVariety::operator==(const CheeseVariety &rhs) const {
+    return id == rhs.id;
+}
+
+bool CheeseVariety::operator!=(const CheeseVariety &rhs) const {
+    return !(rhs == *this);
+}
