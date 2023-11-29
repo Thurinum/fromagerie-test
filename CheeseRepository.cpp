@@ -8,8 +8,10 @@ vector<CheeseVariety> CheeseRepository::varietiesFromCountry(const Country &coun
     vector<CheeseVariety> result;
 
     for (const CheeseVariety& variety : this->varieties) {
-        if (variety.countryOfOrigin == country) {
-
+        if (variety.countryOfOrigin.id == country.id) {
+            result.push_back(variety);
         }
     }
+
+    return result;
 }

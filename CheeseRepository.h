@@ -15,7 +15,7 @@ class CheeseRepository {
 public:
 //    vector<CheeseVariety> allVarieties();
 //    vector<CheeseVariety> varietyByName(string name);
-    [[nodiscard]] vector<CheeseVariety> varietiesFromCountry(const Country& country) const;
+    vector<CheeseVariety> varietiesFromCountry(const Country& country) const;
 
 private:
     vector<CheeseVariety> varieties;

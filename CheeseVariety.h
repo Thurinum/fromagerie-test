@@ -25,9 +25,6 @@ struct CheeseVariety {
     int calories;
     int saturatedFatMg;
     int cholesterolMg;
-
-    bool operator==(const CheeseVariety &rhs) const;
-    bool operator!=(const CheeseVariety &rhs) const;
 };
 
 
